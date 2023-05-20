@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/3a0142cf28.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+    <div id="header">
+        <div class="container">
+            <!--navbar-->
+            <nav>
+                <!-- <img src="./images/logo.png" class="logo"> -->
+                <div class="logo1"><a href="#">Port<span>folio.</span></a></div>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!--Header-text-->
+            <div class="header-text">
+                <h1>Hi, I'm <br> <span>Shouvon Singha</span> </h1>
+                <p>And I'm a <span class="typing"></span> </p>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Shouvon Singha.As a last year passout from Brainware University, I specialize in HTML, CSS,
+                        Bootstrap, and
+                        JavaScript. I am a fresher MCA candidate with a passion for creating visually appealing and
+                        user-friendly websites. I am
+                        actively seeking a suitable IT job as a front-end developer or web developer and am ready to
+                        contribute to the industry with my strong skill set and eagerness to learn.</p>
+
+                    <a href="./images/Shouvonsingha_cv.pdf" download class="btn btn2">Download CV</a>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Techinacal Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('industrial-training')">Industrial Training</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>JavaScript</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MCA</span><br>2020 to 2022 - Brainware University - Marks 89%</li>
+                            <li><span>BCA</span><br>2017 to 2020 - MAKAUT - Marks 63%</li>
+                            <li><span>HIGHER SECONDARY</span><br>2015 to 2017 - WBCHSE - Marks 67%</li>
+                            <li><span>SECONDARY</span><br>2015 - WBBSE - Marks 70%</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="industrial-training">
+                        <ul>
+                            <li><span>DevOps Methodologies & Implementation Technique</span><br>August 2021 to September
+                                2021 from EDP
+                                software Limited
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-list">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialized in HTML, CSS, Bootstrap, and JavaScript, I create visually appealing and
+                        user-friendly responsive websites.</p>
+                    <a href="#contact">Know more</a>
+                </div>
+                <div class="service-list">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Developer</h2>
+                    <p>I specialized in HTML, CSS, Bootstrap, and JavaScript, I create visually appealing and
+                        user-friendly responsive websites.</p>
+                    <a href="#contact">Know more</a>
+                </div>
+                <div class="service-list">
+                    <i class="fa-solid fa-recycle"></i>
+                    <h2>Website Redesign</h2>
+                    <p>I specialized in HTML, CSS, Bootstrap, and JavaScript, I create visually appealing and
+                        user-friendly responsive websites.</p>
+                    <a href="#contact">Know more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>Tecnology used: HTML,CSS</p>
+                        <a href="https://landing-page.ronysingha.repl.co/" target=”_blank”><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.1.jpg" alt="">
+                    <div class="layer">
+                        <h3>TinDog</h3>
+                        <p>Tecnology used: HTML,CSS,Bootstrap</p>
+                        <a href="https://tindog.ronysingha.repl.co/" target=”_blank”><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>Tecnology used: HTML,CSS,JavaScript</p>
+                        <a href="https://drum-kit.ronysingha.repl.co/" target=”_blank”><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://replit.com/@RONYSINGHA" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>  <a href = "mailto: shouvonsingha@gmail.com" ><i class="fa-regular fa-envelope"></i></a>shouvonsingha@gmail.com</p>
+                    <p><a href="tel:8250991661"> <i class="fa-solid fa-phone"></i></a> +91 8250991661</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shouvon-singha/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/shouvonsingha/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100005138416508" target="_blank"><i
+ class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/ShouvonSingha" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://github.com/shouvon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!--Copyright-->
+        <div class="copyright">
+            <p>Copyright © Shouvon Singha. Design by Shouvon</p>
+        </div>
+    </div>
+
+
+    <!--Javascript-->
+    <script>
+
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // typing animation script
+        let typed = new Typed(".typing", {
+            strings: ["UI/UX Developer.", "Web Developer.", "Freshers.", "Freelancer."],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true,
+        });
+
+        // hamburg menu
+        let sidemenu = document.getElementById("side-menu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxH8GKbxH8_FqAStysxqf-_BclajLEZ-S_r_rC7T7M4iJN5wLe96D_5QeJu25VqE0o/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
